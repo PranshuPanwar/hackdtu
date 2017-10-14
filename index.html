@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+    <link rel="stylesheet" type="text/css" href="first.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="slideshow.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="navigate">
+    <ul>
+        <li><a class= active href="index.html">HOME</a> </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">LATEST FEEDS</a>
+           <!-- <div class="dropdown-content">
+                <a href="http://www.niecdelhi.ac.in/students/noticeboard/">NORTHERN INDIA ENGINEERING COLLEGE</a>
+                <a href="http://www.msit.in/notices">MAHARAJA SURAJMAL COLLEGE</a>
+                <a href="https://www.mait.ac.in/">MAHARAJA AGARSEN COLLEGE</a>
+                <a href="http://delhitechnicalcampus.ac.in/">DELHI TECHNICAL CAMPUS</a>
+                <a href="http://aiactr.ac.in/">AMBEDKAR COLLEGE</a>
+                <a href="http://www.hmritm.ac.in/">HMR COLLEGE</a>
+            </div>-->
+        </li>
+        <li><a href="about.html">ABOUT US</a> </li>
+    </ul>
+</div>
+<div class="icon">
+    <a href="#" class="fa fa-facebook"> : LOGIN WITH FACEBOOK</a>
+</div>
+<div >
+<form class="login">
+    <p class="block">Username : <input type="text" placeholder="john123"></p>
+    <p class="block"> Password : <input type="password" class="a" placeholder="******"> </p>
+    <p class="sign up"><button class="btn" >SIGN UP</button></p>
+</form>
+</div>
+<div class="heading" align="center"><div id="h1">POOLO</div>
+</div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1/4</div>
+        <img src="pics/new1.jpg" style="width:100%">
+        <div class="text">caption</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2/4</div>
+        <img src="pics/new2.png" style="width:100%">
+        <div class="text">caption</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3/4</div>
+        <img src="pics/new3.jpg" style="width:100%">
+        <div class="text">caption</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4/4</div>
+        <img src="pics/new4.jpg" style="width:100%">
+        <div class="text">caption</div>
+    </div>
+
+</div>
+<br>
+<div style="text-align: center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+<!--<div class="idea">
+    here is something new happpen
+</div>-->
+<div class="iframe">
+    <iframe src="http://codingblocks.com" height="600px" width="400px"></iframe>
+</div>
+<!--<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Learn, Share, Build</h3>
+            <p>Each month, over 50 million developers come to Stack Overflow to<br> learn, share their knowledge, and build their careers....</p>
+            <p>Join the world’s largest developer community.</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+       <!-- <div class="col-sm-4">
+            <h3>Column 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>--
+    </div>
+</div>-->
+</body>
+</html>
