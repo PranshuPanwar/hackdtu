@@ -1,0 +1,19 @@
+footer{
+	background-color: black;
+	color: white;
+}
+body{
+	background-color:grey; 
+}
+#facebookicon{
+  color:rgb(59,89,163);
+}
+#linkedinicon{
+  color:rgb(0,127,178);
+}
+#githubicon{
+  color:rgb(102,43,129);
+}
+#freecodecampicon{
+  color:rgb(0,128,0);
+}

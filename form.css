@@ -1,0 +1,30 @@
+body{
+	background: url("caaar.jpg");
+	background-size: cover;
+	color: black;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-weight: bold;
+}
+hr{
+	background-color: white;
+}
+#logoName{
+	color: red;
+}
+#or{
+	color: black;
+}
+#form{
+	background-color: #3f70bf;
+	opacity: 0.7; 	
+	border: 2px solid blue;
+}
+#main{
+	margin:5%;
+	color: white;
+	font-weight: bold;
+}
+.navbar{
+	opacity: 0.7;
+}
